@@ -5,31 +5,20 @@ import App from "./App";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Edit from "./pages/Edit";
-
-// const router = createBrowserRouter([
-//     {
-//         path: "/",
-//         Element: <Home />,
-//     },
-//     {
-//         path: "/edit",
-//         element: <Edit />,
-//     },
-// ]);
+import Home from "./routes/Home";
+import Edit from "./routes/Edit";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        Element: <App />,
+        element: <App />,
         children: [
             {
                 path: "/",
                 element: <Home />,
             },
             {
-                path: "/edit",
+                path: "edit",
                 element: <Edit />,
             },
         ],
