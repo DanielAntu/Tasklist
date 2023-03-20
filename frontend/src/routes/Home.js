@@ -10,12 +10,16 @@ const Home = () => {
             </form>
             <div className={styles.container_table}>
                 <table className={styles.table}>
-                    <tr className="bold">
-                        <td>Tarefa</td>
-                        <td>Situação</td>
-                        <td>Ações</td>
-                    </tr>
-                    <Rows task="Tomar Café" sit="Em andamento" />
+                    <thead>
+                        <tr className="bold">
+                            <td>Tarefa</td>
+                            <td>Situação</td>
+                            <td>Ações</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <Rows task="Tomar Café" sit="Em andamento" />
+                    </tbody>
                 </table>
             </div>
         </div>
