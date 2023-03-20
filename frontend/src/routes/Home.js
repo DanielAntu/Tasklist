@@ -1,9 +1,23 @@
-import React from "react";
+import Rows from "../components/Rows";
+import styles from "./Home.module.css";
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <form className={styles.form}>
+                <input type="text" placeholder="Cadastre sua nova tarefa..." />
+                <input type="submit" value="Cadastrar" />
+            </form>
+            <div className={styles.container_table}>
+                <table className={styles.table}>
+                    <tr className="bold">
+                        <td>Tarefa</td>
+                        <td>Situação</td>
+                        <td>Ações</td>
+                    </tr>
+                    <Rows task="Tomar Café" sit="Em andamento" />
+                </table>
+            </div>
         </div>
     );
 };

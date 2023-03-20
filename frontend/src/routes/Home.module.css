@@ -1,0 +1,80 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.form input {
+    padding: 0.7em;
+    border: none;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.75);
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.form input[type="text"] {
+    flex: 1;
+    max-width: 500px;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    background-color: #6495ed;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #6495ed;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #6495ed;
+}
+
+.container_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+}
+
+.table tr {
+    padding: 0.8em;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    height: 60px;
+}
+
+.table button {
+    background-color: #ff0000;
+    color: #fff;
+    border: 1px solid #ff0000;
+}
+
+.table a {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 0.4em;
+    border: 1px solid #ffa500;
+}
+
+.table button:hover {
+    background-color: #fff;
+    color: #ff0000;
+}
+
+.table a:hover {
+    background-color: #fff;
+    color: #ffa500;
+}

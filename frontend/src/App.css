@@ -1,0 +1,13 @@
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    margin-left: 1em;
+    padding: 0.7em;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}

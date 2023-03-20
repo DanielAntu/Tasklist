@@ -1,14 +1,17 @@
 import "./App.css";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 function App() {
     return (
         <div className="App">
-            <Link to="/">Home</Link>
-            <Link to="edit">Editar</Link>
-            <h1>Task List</h1>
-            <Outlet />
-            <h1>footer</h1>
+            <Header />
+            <Container>
+                <Outlet />
+            </Container>
+            <Footer />
         </div>
     );
 }
