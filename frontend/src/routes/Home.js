@@ -1,6 +1,7 @@
 import Rows from "../components/Rows";
 import styles from "./Home.module.css";
 import useCreateTask from "../hooks/useCreateTask";
+import { useNavigate } from "react-router-dom";
 import useGetAll from "../hooks/useGetAll";
 import { useState } from "react";
 
@@ -8,6 +9,7 @@ const Home = () => {
     const [description, setDescription] = useState([]);
     const createTask = useCreateTask();
     const tasks = useGetAll();
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,6 +18,7 @@ const Home = () => {
         const addData = await data.json();
 
         setDescription((prevData) => [...prevData, addData]);
+        navigate("/");
 
         setDescription("");
     };
