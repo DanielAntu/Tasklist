@@ -30,7 +30,7 @@ const Edit = () => {
 
     return (
         <div className={styles.edit}>
-            <h1>Edite a Tarefa: {id}</h1>
+            <h1>Edite a sua tarefa</h1>
             <form onSubmit={handleSubmit}>
                 <label>
                     <span>Tarefa:</span>
@@ -47,6 +47,7 @@ const Edit = () => {
                         defaultValue={state}
                         onChange={(e) => setState(e.target.value)}
                     >
+                        <option value="">{state}</option>
                         <option value="em andamento">Em andamento</option>
                         <option value="concluido">Concluido</option>
                     </select>

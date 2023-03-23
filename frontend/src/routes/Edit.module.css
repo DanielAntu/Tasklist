@@ -5,6 +5,8 @@
     transform: translate(-50%, -50%);
     border: 1px solid #ccc;
     padding: 1em;
+    width: 100%;
+    max-width: 550px;
 }
 
 .edit h1 {
